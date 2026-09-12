@@ -1,0 +1,17 @@
+google.com
+gmail.com
+microsoft.com
+outlook.com
+office.com
+apple.com
+icloud.com
+paypal.com
+stripe.com
+github.com
+linkedin.com
+facebook.com
+instagram.com
+twitter.com
+x.com
+amazon.com
+cloudflare.com

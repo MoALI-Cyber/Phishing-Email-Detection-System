@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eef3ff;
+    color: #071229;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-nav {
+    background: #172033;
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrap {
+    width: 1375px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.brand-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2563eb, #22c55e);
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #e6ecf8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.lang-btn {
+    color: white;
+    background: #2b3448;
+    border: 1px solid #5b667d;
+    border-radius: 999px;
+    padding: 10px 17px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.start-btn {
+    background: white;
+    color: #101827 !important;
+    padding: 14px 20px;
+    border-radius: 999px;
+    font-weight: 900;
+}
+
+.main {
+    width: 1375px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.scan-box,
+.result-box,
+.reasons-box {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.05);
+}
+
+.scan-box {
+    padding: 18px 28px 28px;
+    margin-bottom: 22px;
+}
+
+.main-label {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 195px;
+    resize: vertical;
+    border: 1px solid #d9e1ee;
+    border-radius: 14px;
+    padding: 13px;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    outline: none;
+}
+
+.upload-row {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.file-input {
+    width: 340px;
+    max-width: 100%;
+    border: 1px solid #c9d4e8;
+    border-radius: 13px;
+    padding: 12px;
+    background: white;
+    font-size: 16px;
+}
+
+.upload-text {
+    background: #eef3ff;
+    color: #173f98;
+    padding: 14px 18px;
+    border-radius: 999px;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.button-row {
+    margin-top: 14px;
+    display: flex;
+    gap: 14px;
+}
+
+.scan-btn,
+.clear-btn {
+    border: 0;
+    border-radius: 13px;
+    padding: 16px 23px;
+    font-size: 17px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.scan-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.clear-btn {
+    background: #e2e8f0;
+    color: #071229;
+}
+
+.result-box {
+    margin-top: 22px;
+    padding: 28px;
+}
+
+.status-pill {
+    display: inline-block;
+    color: white;
+    padding: 16px 22px;
+    min-width: 125px;
+    text-align: center;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.status-pill.safe {
+    background: #16a34a;
+}
+
+.status-pill.warning {
+    background: #d97706;
+}
+
+.status-pill.danger {
+    background: #dc2626;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dde6f5;
+    margin: 18px 0 22px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 18px 24px;
+    font-size: 18px;
+    color: #334155;
+}
+
+.key {
+    color: #071229;
+    font-weight: 900;
+}
+
+.saved-file {
+    overflow-wrap: anywhere;
+}
+
+.reasons-box {
+    margin-top: 22px;
+    margin-bottom: 46px;
+    padding: 28px;
+}
+
+.reasons-box h2 h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.reasons-box ul {
+    margin: 0;
+    padding-left: 60px;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.reasons-box p p {
+    font-size: 18px;
+    color: #334155;
+}
+
+
+@media (max-width: 850px) {
+    .top-nav {
+        height: auto;
+        padding: 14px 0;
+    }
+
+    .nav-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        gap: 18px;
+        padding-bottom: 6px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reasons-box ul {
+        padding-left: 26px;
+    }
+}

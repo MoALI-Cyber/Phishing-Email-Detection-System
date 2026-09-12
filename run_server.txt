@@ -1,0 +1,19 @@
+Powershell:
+
+Set-Location "D:\Project\Project-part 1\phishior"
+.\.venv\Scripts\Activate.ps1
+python app.py
+
+CMD:
+
+cd /d "D:\Project\Project-part 1\phishior"
+.venv\Scripts\activate
+python app.py
+
+
+deactivate
+rmdir /s /q .venv
+py -m venv .venv
+.venv\Scripts\activate
+
+pip install -r requirements.txt
